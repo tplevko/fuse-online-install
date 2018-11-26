@@ -4,13 +4,13 @@
 apiVersion: template.openshift.io/v1
 kind: Template
 metadata:
-  name: fuse-ignite-1.4
+  name: fuse-ignite-1.5
 #
 # Template flavor:
 #
 # Allow localhost refs: false
 # Use docker images: false
-# Syndesis Tag: 1.4
+# Syndesis Tag: 1.5
 # Prometheus Tag: v2.1.0
 # Postgresql Tag: 9.5
 # OAuthProxy Tag: v1.1.0
@@ -186,7 +186,7 @@ objects:
       syndesis.io/app: syndesis
       syndesis.io/type: infrastructure
   stringData:
-    syndesis: "1.4"
+    syndesis: "1.5"
     postgresql: "9.5"
     oauthproxy: "v1.1.0"
     prometheus: "v2.1.0"
@@ -302,7 +302,7 @@ objects:
         - syndesis-ui
         from:
           kind: ImageStreamTag
-          name: fuse-ignite-ui:1.4
+          name: fuse-ignite-ui:1.5
           namespace: ${IMAGE_STREAM_NAMESPACE}
       type: ImageChange
 
@@ -796,7 +796,7 @@ objects:
         - syndesis-meta
         from:
           kind: ImageStreamTag
-          name: fuse-ignite-meta:1.4
+          name: fuse-ignite-meta:1.5
           namespace: ${IMAGE_STREAM_NAMESPACE}
       type: ImageChange
 
@@ -1123,7 +1123,7 @@ objects:
         - syndesis-server
         from:
           kind: ImageStreamTag
-          name: fuse-ignite-server:1.4
+          name: fuse-ignite-server:1.5
           namespace: ${IMAGE_STREAM_NAMESPACE}
       type: ImageChange
 
@@ -1188,7 +1188,7 @@ objects:
         apiBaseUrl: ${OPENSHIFT_MASTER}/oapi/v1
         namespace: ${NAMESPACE}
         imageStreamNamespace: ${IMAGE_STREAM_NAMESPACE}
-        builderImageStreamTag: fuse-ignite-s2i:1.4
+        builderImageStreamTag: fuse-ignite-s2i:1.5
         deploymentMemoryRequestMi: 200
         deploymentMemoryLimitMi: 512
         mavenOptions: "-XX:+UseG1GC -XX:+UseStringDeduplication -Xmx310m"
