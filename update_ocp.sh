@@ -5,7 +5,7 @@
 
 # ================
 # Target version to update to
-TAG=1.4.9
+TAG=1.5.6
 # ================
 
 # Minimal version for OC
@@ -292,7 +292,7 @@ create_or_delete_openshift_resource() {
     local result
 
     set +e
-    local url="https://raw.githubusercontent.com/syndesisio/fuse-online-install/${TAG}/${resource}"
+    local url="https://raw.githubusercontent.com/tplevko/fuse-online-install/${TAG}/${resource}"
     result=$(oc $what -f $url >$ERROR_FILE 2>&1)
     if [ $? -ne 0 ]; then
         echo "ERROR: Cannot create remote resource $url"
