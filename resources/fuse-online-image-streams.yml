@@ -14,7 +14,7 @@ items:
     tags:
     - from:
         kind: DockerImage
-        name: brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/fuse7/fuse-ignite-server:1.2-4
+        name: brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/fuse7/fuse-ignite-server:1.2-5
       importPolicy:
         scheduled: true
         insecure: true
@@ -33,7 +33,7 @@ items:
     tags:
     - from:
         kind: DockerImage
-        name: brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/fuse7/fuse-ignite-ui:1.2-2
+        name: brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/fuse7/fuse-ignite-ui:1.2-3
       importPolicy:
         scheduled: true
         insecure: true
@@ -52,7 +52,7 @@ items:
     tags:
     - from:
         kind: DockerImage
-        name: brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/fuse7/fuse-ignite-meta:1.2-3
+        name: brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/fuse7/fuse-ignite-meta:1.2-5
       importPolicy:
         scheduled: true
         insecure: true
@@ -69,7 +69,7 @@ items:
     tags:
     - from:
         kind: DockerImage
-        name: docker.io/openshift/oauth-proxy:v1.1.0
+        name: registry.access.redhat.com/openshift3/oauth-proxy:v3.9.25
       importPolicy:
         scheduled: true
         insecure: true
@@ -105,7 +105,7 @@ items:
     tags:
     - from:
         kind: DockerImage
-        name: brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/fuse7/fuse-ignite-s2i:1.2-3
+        name: brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/fuse7/fuse-ignite-s2i:1.2-5
       importPolicy:
         scheduled: true
         insecure: true
