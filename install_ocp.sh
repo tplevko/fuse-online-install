@@ -411,6 +411,7 @@ spec:
   integration:
     # No limitations by default on OCP
     limit: 0
+  testSupport: true
 EOT
 )
     local extra=""
