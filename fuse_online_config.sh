@@ -1,13 +1,13 @@
 # Tag for release. Update this before running release.sh
-git_fuse_online_install="master"
+git_fuse_online_install="1.5.8.1"
 
 # Tags used for the productised images
-tag_server="1.2-4"
-tag_ui="1.2-2"
-tag_meta="1.2-3"
-tag_s2i="1.2-3"
-tag_upgrade="1.2-6"
-tag_operator="1.2-5"
+tag_server="1.2-5.1547749808"
+tag_ui="1.2-3.1547748649"
+tag_meta="1.2-5.1547749683"
+tag_s2i="1.2-5.1547749887"
+tag_upgrade="1.2-13"
+tag_operator="1.2-9"
 
 # Docker repository for productised images
 repository="fuse7"
